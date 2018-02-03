@@ -12,6 +12,8 @@
 		E53F46921FD855B200AE19D6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E53F46901FD855B200AE19D6 /* Main.storyboard */; };
 		E53F46941FD855B200AE19D6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E53F46931FD855B200AE19D6 /* Assets.xcassets */; };
 		E53F46971FD855B200AE19D6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E53F46951FD855B200AE19D6 /* LaunchScreen.storyboard */; };
+		E53F46A11FD86CB400AE19D6 /* ringtone.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E53F46A01FD86CB400AE19D6 /* ringtone.mp3 */; };
+		E5A575202023916A00BC64E1 /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5A5751F2023916A00BC64E1 /* UIColor.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,8 @@
 		E53F46931FD855B200AE19D6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E53F46961FD855B200AE19D6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E53F46981FD855B200AE19D6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E53F46A01FD86CB400AE19D6 /* ringtone.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = ringtone.mp3; sourceTree = "<group>"; };
+		E5A5751F2023916A00BC64E1 /* UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -38,6 +42,7 @@
 		E53F46801FD855B100AE19D6 = {
 			isa = PBXGroup;
 			children = (
+				E5A5751E2023914600BC64E1 /* Extension */,
 				E53F468B1FD855B100AE19D6 /* DutyTimeCheck */,
 				E53F468A1FD855B100AE19D6 /* Products */,
 			);
@@ -54,6 +59,7 @@
 		E53F468B1FD855B100AE19D6 /* DutyTimeCheck */ = {
 			isa = PBXGroup;
 			children = (
+				E53F46A01FD86CB400AE19D6 /* ringtone.mp3 */,
 				E53F468C1FD855B100AE19D6 /* AppDelegate.swift */,
 				E53F468E1FD855B100AE19D6 /* ViewController.swift */,
 				E53F46901FD855B200AE19D6 /* Main.storyboard */,
@@ -62,6 +68,14 @@
 				E53F46981FD855B200AE19D6 /* Info.plist */,
 			);
 			path = DutyTimeCheck;
+			sourceTree = "<group>";
+		};
+		E5A5751E2023914600BC64E1 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				E5A5751F2023916A00BC64E1 /* UIColor.swift */,
+			);
+			path = Extension;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -123,6 +137,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E53F46A11FD86CB400AE19D6 /* ringtone.mp3 in Resources */,
 				E53F46971FD855B200AE19D6 /* LaunchScreen.storyboard in Resources */,
 				E53F46941FD855B200AE19D6 /* Assets.xcassets in Resources */,
 				E53F46921FD855B200AE19D6 /* Main.storyboard in Resources */,
@@ -137,6 +152,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E53F468F1FD855B200AE19D6 /* ViewController.swift in Sources */,
+				E5A575202023916A00BC64E1 /* UIColor.swift in Sources */,
 				E53F468D1FD855B100AE19D6 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -261,6 +277,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = DutyTimeCheck/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.objective-c.DutyTimeCheck";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -273,6 +290,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = DutyTimeCheck/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.objective-c.DutyTimeCheck";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -299,6 +317,7 @@
 				E53F469D1FD855B200AE19D6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
